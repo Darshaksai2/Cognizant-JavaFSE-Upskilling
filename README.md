@@ -1,0 +1,41 @@
+# Cognizant Digital Nurture 5.0: Java FSE Upskilling Portfolio
+
+[cite_start]This repository contains the complete set of practical source code exercises, structural schemas, and implementation configurations compiled for the **Cognizant Digital Nurture 5.0 Java Full Stack Engineer (FSE) Upskilling Program**[cite: 2, 3]. 
+
+[cite_start]All milestones have been successfully completed within the designated 3-week learning window[cite: 5, 10].
+
+---
+
+## 📁 Repository Structure Matrix
+
+[cite_start]The project is organized into three clean module directories as recommended by the upskilling program sequence[cite: 11, 12]:
+
+### 🔹 [Module 1: Front-End Core Foundations](./module%201/)
+[cite_start]Focused on building a responsive, interactive client-side application for the **Local Community Event Portal**[cite: 443].
+* [cite_start]**HTML5 (`index.html`)**: Implements semantic document structures, structural grid menus, advanced input types, and browser validation attributes[cite: 71, 73].
+* [cite_start]**CSS3 (`styles.css`)**: Implements global style rules, Google font rendering configurations, elements spacing using the CSS Box Model, and multi-column typography layouts[cite: 98, 101, 103].
+* [cite_start]**JavaScript (`main.js`)**: Powers dynamic client logic using high-order array iterations, form submit interceptors, state encapsulation via closures, Web Storage cache management, and browser Geolocation APIs[cite: 122, 123, 124, 127].
+* [cite_start]**Bootstrap 5 Components (`bootstrap_exercises.html`)**: Implements layout structuring with mobile-first grid systems, flexbox positioning utilities, responsive sidebars, interactive modals, and collapsible accordions[cite: 148, 150, 154, 156].
+* **Build Tools (`webpack.config.js`)**: Establishes Webpack compilation rules and links Babel presets to safely transpile modern code configurations[cite: 177, 184].
+
+### 🔹 [Module 2: Relational Databases - ANSI SQL](./module%202/)
+Focused on relational schema engineering and database performance using standard MySQL rules[cite: 195, 197].
+* [cite_start]**Source Scripts (`queries.sql`)**: Features complete data definition statements (DDL) using primary/foreign key constraints and indexing rules, data modification queries (DML), relational inner/left joins, nested subqueries, and grouping logic utilizing aggregate functions[cite: 199, 200, 201].
+
+### 🔹 [Module 3: Advanced Back-End - Core Java](./module%203/)
+[cite_start]Focused on building scalable data structures and evaluating framework environments utilizing modern language updates[cite: 224, 225].
+* **Application Suite (`CoreJavaSuite.java`)**: Features foundational calculation logic, method overloading, algorithmic recursion, precise Object-Oriented design patterns (Inheritance, Interfaces, and Encapsulation), Custom Exception layers, and File I/O streaming[cite: 223, 224].
+* [cite_start]**Modern Platform Features**: Implements immutable Java 17/21 data structures via the `record` keyword, Java 21 Pattern Matching for switch expressions, lightweight concurrency execution via Virtual Threads, and advanced Executor Service task pools[cite: 224, 225].
+* [cite_start]**Analytical Documentation (`README.md`)**: Contains written validations covering Java Reflection APIs, compiled bytecode analysis (`javap`), and software reverse engineering concepts[cite: 225, 237, 242].
+
+---
+
+## 🔧 Environment & Local Execution Checklist
+
+To execute and verify components of this workspace locally:
+1. **Frontend Assets**: Double-click on `module 1/index.html` or `module 1/bootstrap_exercises.html` to run them instantly inside any modern web browser wrapper. [cite_start]Use the `F12` console tab to monitor active event logs[cite: 65].
+2. [cite_start]**Database Queries**: Copy the contents of `module 2/queries.sql` and execute them inside an active MySQL server instance or an open-source online compiler[cite: 34, 197].
+3. [cite_start]**Java Application**: Compile and execute the master program file using your terminal suite or an IDE like IntelliJ IDEA[cite: 34, 237]:
+   ```bash
+   javac -d bin module\ 3/CoreJavaSuite.java
+   java -cp bin upskilling.CoreJavaSuite
