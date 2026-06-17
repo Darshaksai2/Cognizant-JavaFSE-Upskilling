@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            background-color: #f7f9fc; /* Task 1: Embedded style for baseline background [cite: 359] */
+        }
+        #welcomeBanner {
+            background-color: #002c54; /* Task 3: Internal CSS matching layout constraints [cite: 461] */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="mainHeader">
+        <div id="welcomeBanner">
+            <h1>City Council Event Portal</h1>
+            <p>Welcome, Resident! <span style="color: #ff3333; font-weight: bold;">Special Offer:</span> <span class="highlight">Register early for 0 fee entry parameters!</span></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#eventsSection">Browse Events</a></li>
+                <li><a href="#registrationSection">Resident Registration</a></li>
+                <li><a href="#feedbackSection">Portal Feedback</a></li>
+                <li><a href="help.html" target="_blank">Access Help Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="eventsSection">
+            <h2 style="color: red;">Featured Community Gatherings</h2> <p class="lead">Select from upcoming activities hosted by your neighborhood team.</p>
+            
+            <div id="dynamicCardWrapper" class="card-grid"></div>
+
+            <h3 class="mt-4">Archived Gallery Matrix</h3>
+            <table class="gallery-table">
+                <caption>Visual Log of Past Seasonal Events</caption>
+                <tr>
+                    <td><img src="https://picsum.photos/200/120?random=1" class="gallery-img" alt="Baking Workshop" title="Baking Class"></td>
+                    <td><img src="https://picsum.photos/200/120?random=2" class="gallery-img" alt="Music Festival" title="Acoustic Night"></td>
+                    <td><img src="https://picsum.photos/200/120?random=3" class="gallery-img" alt="Art Show" title="Gallery Preview"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/200/120?random=4" class="gallery-img" alt="Charity Drive" title="Food Bank"></td>
+                    <td><img src="https://picsum.photos/200/120?random=5" class="gallery-img" alt="Tech Meetup" title="AI Talk"></td>
+                    <td><img src="https://picsum.photos/200/120?random=6" class="gallery-img" alt="Town Hall" title="Council Session"></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="media-container">
+            <h3>Community Promotional Video Invite</h3>
+            <video id="promoVideo" controls width="100%" oncanplay="console.log('Video ready to play')">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your client interface doesn't support embedded video formats.
+            </video>
+        </section>
+
+        <section id="registrationSection" class="eventCard">
+            <h3>Resident Event Registration Desk</h3>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="residentName">Resident Name:</label>
+                    <input type="text" id="residentName" class="form-input" placeholder="First and last name" required autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label for="residentEmail">Email Address:</label>
+                    <input type="email" id="residentEmail" class="form-input" placeholder="name@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="residentPhone">Contact Phone Number:</label>
+                    <input type="text" id="residentPhone" class="form-input" placeholder="10-digit number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventType">Target Event Category:</label>
+                    <select id="eventType" class="form-input">
+                        <option value="">-- Choose Category --</option>
+                        <option value="music">Music Festival</option>
+                        <option value="workshop">Baking Workshop</option>
+                        <option value="sports">Community Marathon</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventDate">Preferred Target Date:</label>
+                    <input type="date" id="eventDate" class="form-input" required>
+                </div>
+
+                <button type="submit" id="registerBtn">Submit Registration</button>
+                <button type="button" id="clearPrefBtn" class="btn-secondary">Reset Preferences</button>
+                
+                <div class="mt-3">
+                    <output id="formOutputStatus" class="output-log"></output>
+                </div>
+            </form>
+        </section>
+
+        <section id="feedbackSection" class="eventCard">
+            <h3>Real-time Portal Interaction & Geolocation Mapping</h3>
+            <div class="form-group">
+                <label for="feedbackText">Feedback Observations (<span id="charCount">0</span> characters logged):</label>
+                <textarea id="feedbackText" class="form-input" rows="3" placeholder="Type your experience details..."></textarea>
+            </div>
+
+            <div class="geo-sandbox">
+                <button type="button" id="geoBtn">Find Nearby Events</button>
+                <div id="geoDisplay" class="mt-2 text-muted">Locational coordinates unassigned.</div>
+            </div>
+        </section>
+
+        <section class="bulletin-article">
+            <h3>Official City Council Press Release</h3>
+            <p>Our local neighborhood grid continues expanding infrastructure profiles into sustainable clean layouts. Through targeted resource reallocations and civic participation models, the development pipelines scheduled for Q3-Q4 2026 ensure streamlined delivery metrics for municipal tracking metrics.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 City Council Portal Infrastructure Operations. Optimized using standard browser logic patterns.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

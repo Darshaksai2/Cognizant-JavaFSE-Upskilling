@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Upskilling Tasks</title>
+    <!-- Ex 1.1: Link Bootstrap 5 via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/style.min.css" rel="stylesheet">
+    <!-- Ex 17.1: Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .custom-box {
+            background-color: #f1f3f5;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-light pb-5">
+
+    <!-- Ex 10.1: Responsive Navbar with Logo, Links, and Search Form -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-bootstrap-fill me-2"></i>DN5.0 Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Ex 7.1 (JS Behavior Nav): Flexbox behaviors -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 d-flex flex-column flex-md-row">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#grid-section">Grid</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#form-section">Forms</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search...">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <!-- Ex 7.1 & 7.2: Typography and Content Utilities -->
+        <section class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h1 class="display-1 text-uppercase text-primary fw-bold">Dashboard</h1>
+            <p class="lead text-capitalize">Welcome to the integrated Bootstrap 5 upskilling playground.</p>
+            <p class="text-muted text-lowercase">THIS SENTENCE DEMONSTRATES THE LOWERCASE UTILITY CLASS EFFECT.</p>
+            
+            <!-- Ex 10.2: Navigation Tabs/Pills -->
+            <ul class="nav nav-pills mb-3">
+                <li class="nav-item"><a class="nav-link active" href="#">Active Task</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pending Review</a></li>
+            </ul>
+        </section>
+
+        <!-- Ex 3.1, 3.2, 4.1, 4.2, 5.1, 5.2: Grid Layout Section -->
+        <section id="grid-section" class="mb-5">
+            <h3 class="mb-3">Grid & Column Configurations</h3>
+            
+            <!-- Ex 3.1 & 3.2: Responsive Column Stacking -->
+            <div class="row g-3 mb-4">
+                <div class="col-12 col-sm-6 col-md-4"><div class="custom-box">Stack / Row Box 1</div></div>
+                <div class="col-12 col-sm-6 col-md-4"><div class="custom-box">Stack / Row Box 2</div></div>
+                <div class="col-12 col-sm-12 col-md-4"><div class="custom-box">Stack / Row Box 3</div></div>
+            </div>
+
+            <!-- Ex 4.1: Sidebar + Content Area Layout -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-3"><div class="custom-box bg-secondary text-white">Sidebar (col-md-3)</div></div>
+                <div class="col-md-9"><div class="custom-box py-5">Primary Workspace Area (col-md-9)</div></div>
+            </div>
+
+            <!-- Ex 4.2 & 5.2: Four equal width columns with Reordering patterns -->
+            <div class="row g-3 mb-4">
+                <div class="col-sm-3 order-md-2"><div class="custom-box border-primary">Box A (Order MD 2)</div></div>
+                <div class="col-sm-3 order-md-1"><div class="custom-box">Box B (Order MD 1)</div></div>
+                <div class="col-sm-3 order-md-4"><div class="custom-box">Box C (Order MD 4)</div></div>
+                <div class="col-sm-3 order-md-3"><div class="custom-box">Box D (Order MD 3)</div></div>
+            </div>
+
+            <!-- Ex 5.1: Alignment Controls -->
+            <div class="row h-100 justify-content-center align-items-center bg-dark py-4 rounded text-white g-2">
+                <div class="col-auto">Centered Node 1</div>
+                <div class="col-auto">Centered Node 2</div>
+            </div>
+        </section>
+
+        <!-- Ex 12.1, 12.2, 13.1, 13.2: Colors, Backgrounds, and Spacing Utilities -->
+        <section class="mb-5 py-5 px-3 bg-dark text-white rounded bg-gradient shadow-lg">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Pricing Metrics Section</h2>
+                <p class="text-light">Enhanced layout via strategic margin & custom background tokens.</p>
+            </div>
+            <div class="row justify-content-center g-3">
+                <div class="col-md-4">
+                    <!-- Ex 11.1 & 15.2: Profile Card Structuring -->
+                    <div class="card text-dark shadow-sm border-0 rounded-3">
+                        <div class="bg-warning p-4 text-center rounded-top">
+                            <i class="bi bi-lightning-charge display-4"></i>
+                        </div>
+                        <div class="card-body m-2 text-center">
+                            <h5 class="card-title fw-bold">Standard Suite</h5>
+                            <p class="card-text text-muted">Includes essential core connectivity profiles.</p>
+                            <!-- Ex 9.1: Button Contextual Elements -->
+                            <button class="btn btn-warning w-100 text-dark fw-bold shadow-sm">Initialize Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-dark shadow-lg border-primary border-2">
+                        <div class="bg-primary p-4 text-center text-white rounded-top">
+                            <i class="bi bi-shield-check display-4"></i>
+                        </div>
+                        <div class="card-body m-2 text-center">
+                            <h5 class="card-title fw-bold text-primary">Enterprise Core</h5>
+                            <p class="card-text text-muted">Advanced monitoring architecture.</p>
+                            <button class="btn btn-outline-primary w-100 fw-bold">Deploy Module</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ex 8.1, 8.2, 9.2: Form Controls, Form-Floating, and Inputs -->
+        <section id="form-section" class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="bg-white p-4 rounded shadow-sm border">
+                    <h4 class="mb-3 text-secondary">System Registration</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Identity Label</label>
+                            <input type="text" class="form-control" placeholder="Enter identifier">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" placeholder="Subdomain profile">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="termsCheck">
+                            <label class="form-check-label" for="termsCheck">Accept system parameter criteria</label>
+                        </div>
+                        <!-- Ex 9.2: Button groups -->
+                        <div class="btn-group w-100" role="group">
+                            <button type="button" class="btn btn-secondary">Profile A</button>
+                            <button type="button" class="btn btn-dark">Profile B</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="bg-white p-4 rounded shadow-sm border">
+                    <h4 class="mb-3 text-secondary">Secure Entry Gate</h4>
+                    <!-- Ex 8.2: Form Floating Inputs -->
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                        <label for="floatingEmail">Email routing destination</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPass" placeholder="Password">
+                        <label for="floatingPass">Access Token / Password</label>
+                    </div>
+                    <button class="btn btn-primary w-100 py-2">Authenticate</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ex 14.1 & 14.2: Display and Responsive Visibility Sidebars -->
+        <section class="mb-5">
+            <div class="alert alert-info d-md-none text-center">
+                <i class="bi bi-phone"></i> Mobile display breakpoint view active.
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 d-none d-md-block">
+                    <div class="bg-white p-3 rounded shadow-sm border border-info">
+                        <h5 class="text-info"><i class="bi bi-layout-sidebar"></i> Desktop Panel</h5>
+                        <p class="small text-muted">This component automatically drops out (`d-none`) below desktop viewports.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- Ex 11.2: Media Object Layout using Flex Utilities -->
+                    <div class="d-flex align-items-start bg-white p-3 rounded shadow-sm border">
+                        <!-- Ex 15.1: Border utilities with rounded circle image aspect -->
+                        <img src="https://picsum.photos/80" class="border border-primary border-3 rounded-circle me-3" alt="Avatar">
+                        <div>
+                            <h5 class="fw-bold">Media Resource Metadata</h5>
+                            <p class="m-0 text-muted">This block renders flexible entity metadata structured securely right beside the profile avatar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ex 18.1 & 18.2: Modals & Accordion Components -->
+        <section class="mb-5 p-4 bg-white rounded shadow-sm border">
+            <h4 class="mb-3">Interactive Components</h4>
+            
+            <!-- Trigger Modal Button -->
+            <!-- Ex 17.2: Icon-only buttons using Bootstrap Icons -->
+            <button type="button" class="btn btn-danger px-4 me-2" data-bs-toggle="modal" data-bs-target="#triggerModal" title="Trigger System Modal">
+                <i class="bi bi-exclamation-triangle-fill"></i> Execute Modal Alert
+            </button>
+
+            <div class="accordion mt-4" id="workflowAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Initialization Protocol
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#workflowAccordion">
+                        <div class="accordion-body text-muted">
+                            System environment check completed. Dependencies configured cleanly across standard execution targets.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Ex 18.1 Modal Element Structure -->
+    <div class="modal fade" id="triggerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="bi bi-shield-alert me-2"></i>Runtime Confirmation</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-content p-3 text-muted">
+                    Action requires local administrative approval. Verify data structural integrity before committing to pipeline tracking.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger">Confirm Push</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ex 16.1 & 16.2: Position Fixed Footer Overlaying Absolute Badges -->
+    <footer class="footer bg-dark text-white text-center py-3 position-fixed bottom-0 start-0 w-100 shadow-lg z-3">
+        <span class="small text-muted">&copy; 2026 Upskilling Sandbox Tracker.</span>
+        <div class="position-relative d-inline-block ms-3">
+            <i class="bi bi-hdd-network-fill text-success"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 8px;">LIVE</span>
+        </div>
+    </footer>
+
+    <!-- Ex 2.2: Include Bootstrap's JavaScript Bundle via CDN for full features -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

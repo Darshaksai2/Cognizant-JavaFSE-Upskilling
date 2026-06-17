@@ -1,0 +1,154 @@
+/* ==========================================================================
+   CSS3 MASTER Portal Stylesheet - "Local Community Event Portal" [cite: 353]
+   ========================================================================== */
+
+/* 3. Universal Selector: Global Margin & Padding Reset [cite: 378] */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 5. Typography: Google Font Integration [cite: 390, 394] */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #2b2d42;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* 3. ID Selector styling for Main Header Block [cite: 380] */
+#mainHeader {
+    margin-bottom: 30px;
+}
+
+/* 3 & 6. Element & Grouping Selector Rules for Links & Structure [cite: 379, 382, 397] */
+h2, h3 {
+    font-weight: 700;
+    color: #002c54;
+    margin-bottom: 10px;
+}
+
+p, span {
+    font-size: 15px;
+}
+
+.highlight {
+    background-color: rgba(239, 131, 84, 0.2); /* RGBA alpha token opacity use [cite: 387] */
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* 6. Navigation Link Styling via Pseudo-Classes [cite: 397, 401] */
+nav ul {
+    list-style-type: none; /* Remove bullets from nav menus [cite: 402] */
+    background: linear-gradient(90deg, #4f5d75 0%, #2d3748 100%); /* Linear gradient header decoration [cite: 389] */
+    padding: 12px;
+    border-radius: 4px;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a:link { color: #ffffff; text-decoration: none; }
+nav ul li a:visited { color: #e2e8f0; }
+nav ul li a:hover { color: #ef8354; text-decoration: underline; }
+nav ul li a:active { color: #cbd5e1; }
+
+/* 8. Box Model & Layout Control: Event Card Structural Matrix [cite: 381, 411, 416] */
+.eventCard {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 6px solid #ef8354;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Outline styling to track active form fields [cite: 417] */
+.form-input:focus {
+    outline: 2px solid #ef8354;
+    border-color: transparent;
+}
+
+/* Button UI Components [cite: 368] */
+button {
+    background-color: #007bff; /* Primary color assignment [cite: 371] */
+    color: white; /* Contrast text [cite: 372] */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase; /* Text transform utility rules [cite: 396] */
+    letter-spacing: 0.5px;
+}
+
+button:hover { background-color: #0056b3; }
+.btn-secondary { background-color: #64748b; margin-left: 10px; }
+
+/* 7. Table Layout Presentation Rules  */
+.gallery-table {
+    width: 100%;
+    border-collapse: collapse; /* Border collapse parameterization [cite: 410] */
+    margin: 20px 0;
+}
+
+.gallery-table td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: center; /* Center aligning data grid elements [cite: 410] */
+}
+
+.gallery-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+/* 9. Multiple Columns Layout for Text Bulletin Articles [cite: 419, 422] */
+.bulletin-article {
+    column-count: 2; /* Two column newspaper flow layout [cite: 424] */
+    column-gap: 30px; /* Space columns [cite: 425] */
+    column-rule: 1px solid #cbd5e1; /* Visual separator rule line [cite: 426] */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+/* 10. Responsive Web Design using Media Queries [cite: 427, 430] */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically instead of horizontally [cite: 432] */
+        gap: 10px;
+    }
+    
+    .bulletin-article {
+        column-count: 1; /* Collapse text columns down on thin responsive screens */
+    }
+
+    h2 { font-size: 20px; } /* Reduce layout header text sizes [cite: 433] */
+    h3 { font-size: 18px; }
+}
